@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+## Requirements:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NVM (Node version manager)\
+NPM (Node package manager)\
+YARN -> Installed through `npm install --global yarn`
 
 ## Available Scripts
 
