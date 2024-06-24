@@ -8,9 +8,9 @@ on:
 name: Node.js Lint
 
 on:
-  push:
+  pull_request:
     branches:
-      - main  # Change this to your main branch name if different
+      - main
 
 jobs:
   lint:
