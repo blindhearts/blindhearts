@@ -1,4 +1,4 @@
-name: ESLint
+name: Linter
 
 on:
   pull_request:
@@ -26,7 +26,13 @@ jobs:
           node-version: '14'  # Adjust node version as needed
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache --check-cache 
+      
+      - name: Install Prettier
+        run: yarn add --dev --exact prettier
 
       - name: Run ESLint
-        run: yarn run lint  # Adjust if you have a different npm script for linting
+        run: yarn eslint src/ 
+
+      - name: Run Prettier
+        run: yarn prettier src/ 
