@@ -26,7 +26,7 @@ jobs:
           node-version: '14'  # Adjust node version as needed
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Run ESLint
-        run: npm run lint  # Adjust if you have a different npm script for linting
+        run: yarn run lint  # Adjust if you have a different npm script for linting
